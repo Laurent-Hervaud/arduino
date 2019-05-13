@@ -1,0 +1,5 @@
+code à tester :
+https://maker.pro/arduino/projects/build-arduino-self-balancing-robot/
+
+sans le L298 mais à voir :
+https://www.instructables.com/id/Arduino-Self-Balancing-Robot-1/
