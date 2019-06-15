@@ -26,7 +26,8 @@ VectorFloat gravity;    // [x, y, z]            gravity vector
 float ypr[3];           // [yaw, pitch, roll]   yaw/pitch/roll container and gravity vector
 
 //PID
-double originalSetpoint = 175.8;
+//double originalSetpoint = 175.8;
+double originalSetpoint = 182.3;
 double setpoint = originalSetpoint;
 double movingAngleOffset = 0.1;
 double input, output;
@@ -34,10 +35,16 @@ int moveState=0; //0 = balance; 1 = back; 2 = forth
 double Kp = 50;
 double Kd = 1.4;
 double Ki = 60;
+/*
+double Kp = 0;
+double Kd = 0;
+double Ki = 0;*/
 PID pid(&input, &output, &setpoint, Kp, Ki, Kd, DIRECT);
 
-double motorSpeedFactorLeft = 0.6;
-double motorSpeedFactorRight = 0.5;
+/*double motorSpeedFactorLeft = 0.6;
+double motorSpeedFactorRight = 0.5;*/
+double motorSpeedFactorLeft = 0.8;
+double motorSpeedFactorRight = 0.8;
 //MOTOR CONTROLLER
 int ENA = 5;
 int IN1 = 6;
