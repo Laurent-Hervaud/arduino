@@ -43,7 +43,7 @@ PID pid(&input, &output, &setpoint, Kp, Ki, Kd, DIRECT);
 
 /*double motorSpeedFactorLeft = 0.6;
 double motorSpeedFactorRight = 0.5;*/
-double motorSpeedFactorLeft = 0.8;
+double motorSpeedFactorLeft = 0.9;
 double motorSpeedFactorRight = 0.8;
 //MOTOR CONTROLLER
 int ENA = 5;
